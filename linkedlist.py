@@ -76,3 +76,12 @@ class Solution(object):
             prev.next,a.next,b.next=b,b.next,a
             prev=a
         return self.next
+    def removeElements(self, head, val):
+        prev=ListNode(-1)
+        cur=prev
+        prev.next=head
+        while prev and prev.next:
+            while  prev.next and prev.next.val==val:
+                prev.next=prev.next.next
+            prev=prev.next
+        return cur.next
