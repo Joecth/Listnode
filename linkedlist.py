@@ -85,3 +85,13 @@ class Solution(object):
                 prev.next=prev.next.next
             prev=prev.next
         return cur.next
+    def swapPairs(self, head):
+        prev,prev.next=self,head
+        while prev.next and prev.next.next:
+            cur=prev.next
+            nex=cur.next
+            cur.next=nex.next
+            nex.next=cur
+            prev.next=nex
+            prev=cur
+        return self.next
