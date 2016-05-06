@@ -1,4 +1,6 @@
 #!usr/bin/python
+'''Hihi'''
+'''Good Morning!'''
 class Solution(object):
     def reverseList(self, head):
         prev,cur=None,head
