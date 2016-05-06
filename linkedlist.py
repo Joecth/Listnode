@@ -1,6 +1,7 @@
 #!usr/bin/python
 '''Hihi'''
 '''Good Morning!'''
+'''night already 0506'''
 class Solution(object):
     def reverseList(self, head):
         prev,cur=None,head
